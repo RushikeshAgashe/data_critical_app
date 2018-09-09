@@ -1,0 +1,34 @@
+<sunSpecModels v="1">
+  <!-- 64161: SST_Inverter -->
+  <model id="64161" len="8" name="sst_inverter">
+    <block len="8">
+      <point id="dummy0" offset="0" type="uint32" sf="dummy_sf" mandatory="true" access="rw"/>
+      <point id="dummy1" offset="2" type="int32" sf="dummy_sf" mandatory="true" access="rw"/>
+      <point id="dummy2" offset="4" type="int32" sf="dummy_sf" mandatory="true" access="rw"/>
+      <point id="dummy_sf" offset="6" type="sunssf"  mandatory="true" />
+      <point id="Pad" offset="7" type="pad"  mandatory="true" />
+    </block>
+  </model>
+  <strings id="64161" locale="en">
+    <model>
+      <label>SST Inverter</label>
+      <description>This is a custom model for the 3-SST Inverter Setup</description>
+      <notes></notes>
+    </model>
+    <point id="Vbat">
+      <label>Voltage</label>
+      <description>DESD Battery Voltage</description>
+      <notes></notes>
+    </point>
+    <point id="Vldc">
+      <label>L-Voltage DC</label>
+      <description>Low-Voltage DC</description>
+      <notes></notes>
+    </point>
+    <point id="Vhdc">
+      <label>H-Voltage DC</label>
+      <description>High-Voltage DC</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

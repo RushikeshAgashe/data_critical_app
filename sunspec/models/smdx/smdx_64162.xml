@@ -1,0 +1,46 @@
+<sunSpecModels v="1">
+  <!-- 64161: SST_Inverter -->
+  <model id="64162" len="22" name="sst_inverter">
+    <block len="22">
+      <point id="Vbat" offset="0" type="int32" sf="E3_sf" mandatory="true" access="r" units="V"/>
+      <point id="Vhdc_ref" offset="2" type="int32" sf="E3_sf" mandatory="true" access="rw" units="V"/>
+      <point id="Vhdc" offset="4" type="int32" sf="E3_sf" mandatory="true" access="r" units="V"/>
+      <point id="Vldc_ref" offset="6" type="int32" sf="E3_sf" mandatory="true" access="rw" units="V"/>
+      <point id="Vldc" offset="8" type="int32" sf="E3_sf" mandatory="true" access="r" units="V"/>
+      <point id="Iinv_ref" offset="10" type="int32" sf="E3_sf" mandatory="true" access="rw" units="A"/>
+      <point id="Iinv_ref_ramp_rate_per_s" offset="12" type="int32" sf="E3_sf" mandatory="true" access="rw" units="A/s"/>
+      <point id="Iinv" offset="14" type="int32" sf="E3_sf" mandatory="true" access="r" units="A"/>
+      <point id="Iinv_rms" offset="16" type="int32" sf="E3_sf" mandatory="true" access="r" units="A"/>
+      <point id="Iload_rms" offset="18" type="int32" sf="E3_sf" mandatory="true" access="r" units="A"/>
+      <point id="E3_sf" offset="20" type="sunssf"  mandatory="true" />
+      <point id="Pad" offset="21" type="pad"  mandatory="true" />
+    </block>
+  </model>
+  <strings id="64162" locale="en">
+    <model>
+      <label>SST Inverter</label>
+      <description>This is a custom model for the 3-SST Inverter Setup</description>
+      <notes></notes>
+    </model>
+    <point id="Vbat">
+      <label>Voltage</label>
+      <description>DESD Battery Voltage</description>
+      <notes></notes>
+    </point>
+    <point id="Vldc">
+      <label>L-Voltage DC</label>
+      <description>Low-Voltage DC</description>
+      <notes></notes>
+    </point>
+    <point id="Vhdc">
+      <label>H-Voltage DC</label>
+      <description>High-Voltage DC</description>
+      <notes></notes>
+    </point>
+    <point id="Iinv">
+      <label>Inverter Output Current</label>
+      <description>Inverter Output Current</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>
